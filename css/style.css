@@ -1,0 +1,172 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --primary-color: hsl(225, 100%, 94%);
+  --secondy-color: hsl(245, 75%, 52%);
+  --three-color: hsla(245, 75%, 52%, 0.744);
+
+  --neutral-1: hsl(225, 100%, 98%);
+  --neutral-2: hsl(224, 23%, 55%);
+  --neutral-3: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url("/css/img/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: var(--primary-color);
+  width: 1440px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.container-principal {
+  width: 450px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--neutral-1);
+  border-radius: 15px;
+}
+
+.container-principal .top {
+  margin-bottom: 2rem;
+}
+
+.container-principal .top .imagem img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container-principal .mid {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-principal .mid h1 {
+  font-size: 1.5rem;
+  font-weight: 700px;
+}
+.container-principal .mid p {
+  font-size: 1rem;
+  color: var(--neutral-2);
+}
+
+.container-principal .mid .description {
+  background-color: rgb(183, 183, 183);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsla(225, 100%, 94%, 0.286);
+  margin-bottom: 1rem;
+}
+
+.description .icon {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description .icon p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: start;
+}
+
+span {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.description .change p {
+  color: var(--secondy-color);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.change:hover p {
+  transition: 0.4s;
+  text-decoration: none;
+  color: var(--three-color);
+}
+
+.icon,
+.plano,
+.change {
+  margin: 0;
+}
+
+.container-principal .low {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--secondy-color);
+  border-radius: 10px;
+  box-shadow: 0px 16px hsla(225, 100%, 94%, 0.491);
+  margin-bottom: 0.5rem;
+}
+
+.container-principal .low a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.low:hover {
+  transition: 0.4s;
+  background-color: var(--three-color);
+}
+
+.container-principal .cancel p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cancel:hover p {
+  transition: 0.4s;
+  color: #000;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url("/css/img/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-color: var(--primary-color);
+    width: 380px;
+    height: 710px;
+    display: flex;
+    padding: 1rem;
+    margin-top: 50px;
+  }
+
+  .container-principal {
+    width: 375px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--neutral-1);
+    border-radius: 15px;
+  }
+}
